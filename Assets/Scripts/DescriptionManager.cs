@@ -10,11 +10,13 @@ public class DescriptionManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textDescription;
     [SerializeField] private Image cursor;
+    [SerializeField] private Image cursorOnPainting;
 
     // Start is called before the first frame update
     void Start()
     {
-        cursor.enabled = false;
+        cursor.enabled = true;
+        cursorOnPainting.enabled = false;
     }
 
     // Update is called once per frame
@@ -29,11 +31,13 @@ public class DescriptionManager : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        cursor.enabled = true;
+        cursor.enabled = false;
+        cursorOnPainting.enabled = true;
     }
 
     private void OnMouseExit()
     {
-        cursor.enabled = false;
+        cursor.enabled = true;
+        cursorOnPainting.enabled = false;
     }
 }
