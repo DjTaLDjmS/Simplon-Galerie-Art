@@ -15,8 +15,7 @@ public class DescriptionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cursor.enabled = true;
-        cursorOnPainting.enabled = false;
+        MouseCursorInit();
     }
 
     // Update is called once per frame
@@ -31,14 +30,24 @@ public class DescriptionManager : MonoBehaviour
     }
     private void OnMouseEnter()
     {
-        cursor.enabled = false;
-        cursorOnPainting.enabled = true;
+        MouseCursorSwitch();
     }
 
     private void OnMouseExit()
     {
+        MouseCursorSwitch();
+    }
+
+    public void MouseCursorInit()
+    {
         cursor.enabled = true;
         cursorOnPainting.enabled = false;
+    }
+
+    public void MouseCursorSwitch()
+    {
+        cursor.enabled = !cursor.enabled;
+        cursorOnPainting.enabled = !cursorOnPainting.enabled;
     }
 
     public void DescriptionSwitch()
