@@ -27,7 +27,7 @@ public class DescriptionManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        textDescription.enabled = !textDescription.isActiveAndEnabled;
+        DescriptionSwitch();
     }
     private void OnMouseEnter()
     {
@@ -39,5 +39,10 @@ public class DescriptionManager : MonoBehaviour
     {
         cursor.enabled = true;
         cursorOnPainting.enabled = false;
+    }
+
+    public void DescriptionSwitch()
+    {
+        textDescription.enabled = !textDescription.isActiveAndEnabled;
     }
 }
