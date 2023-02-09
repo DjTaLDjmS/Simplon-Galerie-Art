@@ -14,12 +14,6 @@ public class DescriptionManager : MonoBehaviour
         MouseCursorInit();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnMouseDown()
     {
         DescriptionSwitch();
