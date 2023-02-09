@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class DescriptionManager : MonoBehaviour
