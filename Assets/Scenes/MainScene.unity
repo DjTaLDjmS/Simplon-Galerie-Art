@@ -1298,7 +1298,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27646
+  m_Name: pb_Mesh52942
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5328,7 +5328,7 @@ PrefabInstance:
     - target: {fileID: 3968422287909540877, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5705482673582415776, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
         type: 3}
@@ -5370,6 +5370,11 @@ PrefabInstance:
         utilis\xE9es sont sombres, refl\xE9tant l'humeur d\xE9pressives de l'artiste
         \xE0 cette \xE9poque. Le cri est surtout un symbole de l'angoisse, de la
         solitude et de l'incapacit\xE9 \xE0 trouver sa place dans le monde."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121019373868290233, guid: 6784e23d2c4033b5d8b26cf9bd11e211,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6784e23d2c4033b5d8b26cf9bd11e211, type: 3}
